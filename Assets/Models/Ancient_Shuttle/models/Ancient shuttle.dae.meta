@@ -1,0 +1,916 @@
+fileFormatVersion: 2
+guid: ad51d54abcc850a479c6d091e8f966a7
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Camera
+    100004: Component_11_1
+    100006: Component_11_2
+    100008: Component_11_3
+    100010: Component_11_4
+    100012: Component_14
+    100014: Component_14_1
+    100016: Component_14_1_2
+    100018: Component_14_2
+    100020: Component_15_1
+    100022: Component_15_2
+    100024: Component_15_3
+    100026: Component_15_4
+    100028: Component_17
+    100030: Component_17_1
+    100032: Component_17_1_2
+    100034: Component_17_2
+    100036: Component_19
+    100038: Component_19 1
+    100040: Component_19 2
+    100042: Component_19 3
+    100044: Component_19_1
+    100046: Component_19_1_2
+    100048: Component_19_1_2 1
+    100050: Component_19_1_2 2
+    100052: Component_19_1_2 3
+    100054: Component_19_2
+    100056: Component_19_3
+    100058: Component_19_4
+    100060: Component_19_5
+    100062: Component_19_6
+    100064: Component_19_7
+    100066: Component_19_8
+    100068: Component_20_1
+    100070: Component_20_2
+    100072: Component_26
+    100074: Component_26 1
+    100076: Component_26 2
+    100078: Component_26 3
+    100080: Component_26 4
+    100082: Component_26_1
+    100084: Component_26_10
+    100086: Component_26_1_2
+    100088: Component_26_1_2 1
+    100090: Component_26_1_2 2
+    100092: Component_26_1_2 3
+    100094: Component_26_1_2 4
+    100096: Component_26_2
+    100098: Component_26_3
+    100100: Component_26_4
+    100102: Component_26_5
+    100104: Component_26_6
+    100106: Component_26_7
+    100108: Component_26_8
+    100110: Component_26_9
+    100112: Component_27
+    100114: Component_27 1
+    100116: Component_27_1
+    100118: Component_27_1_2
+    100120: Component_27_1_2 1
+    100122: Component_27_2
+    100124: Component_27_3
+    100126: Component_27_4
+    100128: Component_29_1
+    100130: Component_29_2
+    100132: Component_29_3
+    100134: Component_30
+    100136: Component_30_1
+    100138: Component_30_1_2
+    100140: Component_30_2
+    100142: Component_31
+    100144: Component_31_1
+    100146: Component_31_1_2
+    100148: Component_31_2
+    100150: Component_33_1
+    100152: Component_33_2
+    100154: Component_34_1
+    100156: Component_34_2
+    100158: Component_351
+    100160: Component_351_1
+    100162: Component_351_1_2
+    100164: Component_351_2
+    100166: Component_352
+    100168: Component_352_1
+    100170: Component_35_1
+    100172: Component_35_2
+    100174: Component_36
+    100176: Component_36_1
+    100178: Component_36_1_2
+    100180: Component_36_2
+    100182: Component_41_1
+    100184: Component_41_2
+    100186: Component_41_3
+    100188: Component_41_4
+    100190: Component_42_1
+    100192: Component_42_10
+    100194: Component_42_11
+    100196: Component_42_12
+    100198: Component_42_2
+    100200: Component_42_3
+    100202: Component_42_4
+    100204: Component_42_5
+    100206: Component_42_6
+    100208: Component_42_7
+    100210: Component_42_8
+    100212: Component_42_9
+    100214: Component_43_1
+    100216: Component_43_2
+    100218: Component_43_3
+    100220: Component_43_4
+    100222: Component_44_1
+    100224: Component_44_2
+    100226: Component_44_3
+    100228: Component_44_4
+    100230: Component_45_1
+    100232: Component_45_2
+    100234: Component_45_3
+    100236: Component_45_4
+    100238: Component_45_5
+    100240: Component_45_6
+    100242: Component_45_7
+    100244: Component_45_8
+    100246: Component_46_1
+    100248: Component_46_2
+    100250: Component_46_3
+    100252: Component_46_4
+    100254: Component_47
+    100256: Component_47 1
+    100258: Component_47 2
+    100260: Component_47 3
+    100262: Component_47 4
+    100264: Component_47 5
+    100266: Component_47_1
+    100268: Component_47_10
+    100270: Component_47_11
+    100272: Component_47_12
+    100274: Component_47_1_2
+    100276: Component_47_1_2 1
+    100278: Component_47_1_2 2
+    100280: Component_47_1_2 3
+    100282: Component_47_1_2 4
+    100284: Component_47_1_2 5
+    100286: Component_47_2
+    100288: Component_47_3
+    100290: Component_47_4
+    100292: Component_47_5
+    100294: Component_47_6
+    100296: Component_47_7
+    100298: Component_47_8
+    100300: Component_47_9
+    100302: Component_48_1
+    100304: Component_48_2
+    100306: Component_48_3
+    100308: Component_48_4
+    100310: Component_49_1
+    100312: Component_49_2
+    100314: Component_50
+    100316: Component_50_1
+    100318: Component_51_1
+    100320: Component_5_1
+    100322: Component_5_2
+    100324: Component_6_1
+    100326: Component_7_1
+    100328: Component_7_2
+    100330: Component_8_1
+    100332: Group1
+    100334: Group2
+    100336: mesh1
+    100338: mesh10
+    100340: mesh11
+    100342: mesh12
+    100344: mesh13
+    100346: mesh13 1
+    100348: mesh13 2
+    100350: mesh13 3
+    100352: mesh13 4
+    100354: mesh13 5
+    100356: mesh14
+    100358: mesh15
+    100360: mesh16
+    100362: mesh17
+    100364: mesh18
+    100366: mesh19
+    100368: mesh2
+    100370: mesh20
+    100372: mesh21
+    100374: mesh22
+    100376: mesh23
+    100378: mesh24
+    100380: mesh25
+    100382: mesh26
+    100384: mesh26 1
+    100386: mesh26 2
+    100388: mesh26 3
+    100390: mesh26 4
+    100392: mesh26 5
+    100394: mesh27
+    100396: mesh28
+    100398: mesh29
+    100400: mesh3
+    100402: mesh30
+    100404: mesh30 1
+    100406: mesh30 2
+    100408: mesh30 3
+    100410: mesh31
+    100412: mesh32
+    100414: mesh32 1
+    100416: mesh32 2
+    100418: mesh32 3
+    100420: mesh32 4
+    100422: mesh33
+    100424: mesh34
+    100426: mesh35
+    100428: mesh36
+    100430: mesh37
+    100432: mesh38
+    100434: mesh39
+    100436: mesh4
+    100438: mesh40
+    100440: mesh41
+    100442: mesh42
+    100444: mesh42 1
+    100446: mesh42 2
+    100448: mesh42 3
+    100450: mesh42 4
+    100452: mesh43
+    100454: mesh44
+    100456: mesh45
+    100458: mesh46
+    100460: mesh47
+    100462: mesh48
+    100464: mesh49
+    100466: mesh5
+    100468: mesh50
+    100470: mesh51
+    100472: mesh52
+    100474: mesh52 1
+    100476: mesh53
+    100478: mesh54
+    100480: mesh55
+    100482: mesh56
+    100484: mesh57
+    100486: mesh58
+    100488: mesh59
+    100490: mesh6
+    100492: mesh60
+    100494: mesh61
+    100496: mesh62
+    100498: mesh63
+    100500: mesh64
+    100502: mesh65
+    100504: mesh66
+    100506: mesh66 1
+    100508: mesh66 2
+    100510: mesh66 3
+    100512: mesh67
+    100514: mesh68
+    100516: mesh69
+    100518: mesh7
+    100520: mesh70
+    100522: mesh71
+    100524: mesh72
+    100526: mesh72 1
+    100528: mesh73
+    100530: mesh74
+    100532: mesh75
+    100534: mesh76
+    100536: mesh77
+    100538: mesh78
+    100540: mesh79
+    100542: mesh8
+    100544: mesh80
+    100546: mesh81
+    100548: mesh82
+    100550: mesh83
+    100552: mesh9
+    100554: Model
+    400000: //RootNode
+    400002: Camera
+    400004: Component_11_1
+    400006: Component_11_2
+    400008: Component_11_3
+    400010: Component_11_4
+    400012: Component_14
+    400014: Component_14_1
+    400016: Component_14_1_2
+    400018: Component_14_2
+    400020: Component_15_1
+    400022: Component_15_2
+    400024: Component_15_3
+    400026: Component_15_4
+    400028: Component_17
+    400030: Component_17_1
+    400032: Component_17_1_2
+    400034: Component_17_2
+    400036: Component_19
+    400038: Component_19 1
+    400040: Component_19 2
+    400042: Component_19 3
+    400044: Component_19_1
+    400046: Component_19_1_2
+    400048: Component_19_1_2 1
+    400050: Component_19_1_2 2
+    400052: Component_19_1_2 3
+    400054: Component_19_2
+    400056: Component_19_3
+    400058: Component_19_4
+    400060: Component_19_5
+    400062: Component_19_6
+    400064: Component_19_7
+    400066: Component_19_8
+    400068: Component_20_1
+    400070: Component_20_2
+    400072: Component_26
+    400074: Component_26 1
+    400076: Component_26 2
+    400078: Component_26 3
+    400080: Component_26 4
+    400082: Component_26_1
+    400084: Component_26_10
+    400086: Component_26_1_2
+    400088: Component_26_1_2 1
+    400090: Component_26_1_2 2
+    400092: Component_26_1_2 3
+    400094: Component_26_1_2 4
+    400096: Component_26_2
+    400098: Component_26_3
+    400100: Component_26_4
+    400102: Component_26_5
+    400104: Component_26_6
+    400106: Component_26_7
+    400108: Component_26_8
+    400110: Component_26_9
+    400112: Component_27
+    400114: Component_27 1
+    400116: Component_27_1
+    400118: Component_27_1_2
+    400120: Component_27_1_2 1
+    400122: Component_27_2
+    400124: Component_27_3
+    400126: Component_27_4
+    400128: Component_29_1
+    400130: Component_29_2
+    400132: Component_29_3
+    400134: Component_30
+    400136: Component_30_1
+    400138: Component_30_1_2
+    400140: Component_30_2
+    400142: Component_31
+    400144: Component_31_1
+    400146: Component_31_1_2
+    400148: Component_31_2
+    400150: Component_33_1
+    400152: Component_33_2
+    400154: Component_34_1
+    400156: Component_34_2
+    400158: Component_351
+    400160: Component_351_1
+    400162: Component_351_1_2
+    400164: Component_351_2
+    400166: Component_352
+    400168: Component_352_1
+    400170: Component_35_1
+    400172: Component_35_2
+    400174: Component_36
+    400176: Component_36_1
+    400178: Component_36_1_2
+    400180: Component_36_2
+    400182: Component_41_1
+    400184: Component_41_2
+    400186: Component_41_3
+    400188: Component_41_4
+    400190: Component_42_1
+    400192: Component_42_10
+    400194: Component_42_11
+    400196: Component_42_12
+    400198: Component_42_2
+    400200: Component_42_3
+    400202: Component_42_4
+    400204: Component_42_5
+    400206: Component_42_6
+    400208: Component_42_7
+    400210: Component_42_8
+    400212: Component_42_9
+    400214: Component_43_1
+    400216: Component_43_2
+    400218: Component_43_3
+    400220: Component_43_4
+    400222: Component_44_1
+    400224: Component_44_2
+    400226: Component_44_3
+    400228: Component_44_4
+    400230: Component_45_1
+    400232: Component_45_2
+    400234: Component_45_3
+    400236: Component_45_4
+    400238: Component_45_5
+    400240: Component_45_6
+    400242: Component_45_7
+    400244: Component_45_8
+    400246: Component_46_1
+    400248: Component_46_2
+    400250: Component_46_3
+    400252: Component_46_4
+    400254: Component_47
+    400256: Component_47 1
+    400258: Component_47 2
+    400260: Component_47 3
+    400262: Component_47 4
+    400264: Component_47 5
+    400266: Component_47_1
+    400268: Component_47_10
+    400270: Component_47_11
+    400272: Component_47_12
+    400274: Component_47_1_2
+    400276: Component_47_1_2 1
+    400278: Component_47_1_2 2
+    400280: Component_47_1_2 3
+    400282: Component_47_1_2 4
+    400284: Component_47_1_2 5
+    400286: Component_47_2
+    400288: Component_47_3
+    400290: Component_47_4
+    400292: Component_47_5
+    400294: Component_47_6
+    400296: Component_47_7
+    400298: Component_47_8
+    400300: Component_47_9
+    400302: Component_48_1
+    400304: Component_48_2
+    400306: Component_48_3
+    400308: Component_48_4
+    400310: Component_49_1
+    400312: Component_49_2
+    400314: Component_50
+    400316: Component_50_1
+    400318: Component_51_1
+    400320: Component_5_1
+    400322: Component_5_2
+    400324: Component_6_1
+    400326: Component_7_1
+    400328: Component_7_2
+    400330: Component_8_1
+    400332: Group1
+    400334: Group2
+    400336: mesh1
+    400338: mesh10
+    400340: mesh11
+    400342: mesh12
+    400344: mesh13
+    400346: mesh13 1
+    400348: mesh13 2
+    400350: mesh13 3
+    400352: mesh13 4
+    400354: mesh13 5
+    400356: mesh14
+    400358: mesh15
+    400360: mesh16
+    400362: mesh17
+    400364: mesh18
+    400366: mesh19
+    400368: mesh2
+    400370: mesh20
+    400372: mesh21
+    400374: mesh22
+    400376: mesh23
+    400378: mesh24
+    400380: mesh25
+    400382: mesh26
+    400384: mesh26 1
+    400386: mesh26 2
+    400388: mesh26 3
+    400390: mesh26 4
+    400392: mesh26 5
+    400394: mesh27
+    400396: mesh28
+    400398: mesh29
+    400400: mesh3
+    400402: mesh30
+    400404: mesh30 1
+    400406: mesh30 2
+    400408: mesh30 3
+    400410: mesh31
+    400412: mesh32
+    400414: mesh32 1
+    400416: mesh32 2
+    400418: mesh32 3
+    400420: mesh32 4
+    400422: mesh33
+    400424: mesh34
+    400426: mesh35
+    400428: mesh36
+    400430: mesh37
+    400432: mesh38
+    400434: mesh39
+    400436: mesh4
+    400438: mesh40
+    400440: mesh41
+    400442: mesh42
+    400444: mesh42 1
+    400446: mesh42 2
+    400448: mesh42 3
+    400450: mesh42 4
+    400452: mesh43
+    400454: mesh44
+    400456: mesh45
+    400458: mesh46
+    400460: mesh47
+    400462: mesh48
+    400464: mesh49
+    400466: mesh5
+    400468: mesh50
+    400470: mesh51
+    400472: mesh52
+    400474: mesh52 1
+    400476: mesh53
+    400478: mesh54
+    400480: mesh55
+    400482: mesh56
+    400484: mesh57
+    400486: mesh58
+    400488: mesh59
+    400490: mesh6
+    400492: mesh60
+    400494: mesh61
+    400496: mesh62
+    400498: mesh63
+    400500: mesh64
+    400502: mesh65
+    400504: mesh66
+    400506: mesh66 1
+    400508: mesh66 2
+    400510: mesh66 3
+    400512: mesh67
+    400514: mesh68
+    400516: mesh69
+    400518: mesh7
+    400520: mesh70
+    400522: mesh71
+    400524: mesh72
+    400526: mesh72 1
+    400528: mesh73
+    400530: mesh74
+    400532: mesh75
+    400534: mesh76
+    400536: mesh77
+    400538: mesh78
+    400540: mesh79
+    400542: mesh8
+    400544: mesh80
+    400546: mesh81
+    400548: mesh82
+    400550: mesh83
+    400552: mesh9
+    400554: Model
+    2300000: mesh1
+    2300002: mesh10
+    2300004: mesh11
+    2300006: mesh12
+    2300008: mesh13
+    2300010: mesh13 1
+    2300012: mesh13 2
+    2300014: mesh13 3
+    2300016: mesh13 4
+    2300018: mesh13 5
+    2300020: mesh14
+    2300022: mesh15
+    2300024: mesh16
+    2300026: mesh17
+    2300028: mesh18
+    2300030: mesh19
+    2300032: mesh2
+    2300034: mesh20
+    2300036: mesh21
+    2300038: mesh22
+    2300040: mesh23
+    2300042: mesh24
+    2300044: mesh25
+    2300046: mesh26
+    2300048: mesh26 1
+    2300050: mesh26 2
+    2300052: mesh26 3
+    2300054: mesh26 4
+    2300056: mesh26 5
+    2300058: mesh27
+    2300060: mesh28
+    2300062: mesh29
+    2300064: mesh3
+    2300066: mesh30
+    2300068: mesh30 1
+    2300070: mesh30 2
+    2300072: mesh30 3
+    2300074: mesh31
+    2300076: mesh32
+    2300078: mesh32 1
+    2300080: mesh32 2
+    2300082: mesh32 3
+    2300084: mesh32 4
+    2300086: mesh33
+    2300088: mesh34
+    2300090: mesh35
+    2300092: mesh36
+    2300094: mesh37
+    2300096: mesh38
+    2300098: mesh39
+    2300100: mesh4
+    2300102: mesh40
+    2300104: mesh41
+    2300106: mesh42
+    2300108: mesh42 1
+    2300110: mesh42 2
+    2300112: mesh42 3
+    2300114: mesh42 4
+    2300116: mesh43
+    2300118: mesh44
+    2300120: mesh45
+    2300122: mesh46
+    2300124: mesh47
+    2300126: mesh48
+    2300128: mesh49
+    2300130: mesh5
+    2300132: mesh50
+    2300134: mesh51
+    2300136: mesh52
+    2300138: mesh52 1
+    2300140: mesh53
+    2300142: mesh54
+    2300144: mesh55
+    2300146: mesh56
+    2300148: mesh57
+    2300150: mesh58
+    2300152: mesh59
+    2300154: mesh6
+    2300156: mesh60
+    2300158: mesh61
+    2300160: mesh62
+    2300162: mesh63
+    2300164: mesh64
+    2300166: mesh65
+    2300168: mesh66
+    2300170: mesh66 1
+    2300172: mesh66 2
+    2300174: mesh66 3
+    2300176: mesh67
+    2300178: mesh68
+    2300180: mesh69
+    2300182: mesh7
+    2300184: mesh70
+    2300186: mesh71
+    2300188: mesh72
+    2300190: mesh72 1
+    2300192: mesh73
+    2300194: mesh74
+    2300196: mesh75
+    2300198: mesh76
+    2300200: mesh77
+    2300202: mesh78
+    2300204: mesh79
+    2300206: mesh8
+    2300208: mesh80
+    2300210: mesh81
+    2300212: mesh82
+    2300214: mesh83
+    2300216: mesh9
+    3300000: mesh1
+    3300002: mesh10
+    3300004: mesh11
+    3300006: mesh12
+    3300008: mesh13
+    3300010: mesh13 1
+    3300012: mesh13 2
+    3300014: mesh13 3
+    3300016: mesh13 4
+    3300018: mesh13 5
+    3300020: mesh14
+    3300022: mesh15
+    3300024: mesh16
+    3300026: mesh17
+    3300028: mesh18
+    3300030: mesh19
+    3300032: mesh2
+    3300034: mesh20
+    3300036: mesh21
+    3300038: mesh22
+    3300040: mesh23
+    3300042: mesh24
+    3300044: mesh25
+    3300046: mesh26
+    3300048: mesh26 1
+    3300050: mesh26 2
+    3300052: mesh26 3
+    3300054: mesh26 4
+    3300056: mesh26 5
+    3300058: mesh27
+    3300060: mesh28
+    3300062: mesh29
+    3300064: mesh3
+    3300066: mesh30
+    3300068: mesh30 1
+    3300070: mesh30 2
+    3300072: mesh30 3
+    3300074: mesh31
+    3300076: mesh32
+    3300078: mesh32 1
+    3300080: mesh32 2
+    3300082: mesh32 3
+    3300084: mesh32 4
+    3300086: mesh33
+    3300088: mesh34
+    3300090: mesh35
+    3300092: mesh36
+    3300094: mesh37
+    3300096: mesh38
+    3300098: mesh39
+    3300100: mesh4
+    3300102: mesh40
+    3300104: mesh41
+    3300106: mesh42
+    3300108: mesh42 1
+    3300110: mesh42 2
+    3300112: mesh42 3
+    3300114: mesh42 4
+    3300116: mesh43
+    3300118: mesh44
+    3300120: mesh45
+    3300122: mesh46
+    3300124: mesh47
+    3300126: mesh48
+    3300128: mesh49
+    3300130: mesh5
+    3300132: mesh50
+    3300134: mesh51
+    3300136: mesh52
+    3300138: mesh52 1
+    3300140: mesh53
+    3300142: mesh54
+    3300144: mesh55
+    3300146: mesh56
+    3300148: mesh57
+    3300150: mesh58
+    3300152: mesh59
+    3300154: mesh6
+    3300156: mesh60
+    3300158: mesh61
+    3300160: mesh62
+    3300162: mesh63
+    3300164: mesh64
+    3300166: mesh65
+    3300168: mesh66
+    3300170: mesh66 1
+    3300172: mesh66 2
+    3300174: mesh66 3
+    3300176: mesh67
+    3300178: mesh68
+    3300180: mesh69
+    3300182: mesh7
+    3300184: mesh70
+    3300186: mesh71
+    3300188: mesh72
+    3300190: mesh72 1
+    3300192: mesh73
+    3300194: mesh74
+    3300196: mesh75
+    3300198: mesh76
+    3300200: mesh77
+    3300202: mesh78
+    3300204: mesh79
+    3300206: mesh8
+    3300208: mesh80
+    3300210: mesh81
+    3300212: mesh82
+    3300214: mesh83
+    3300216: mesh9
+    4300000: mesh1
+    4300002: mesh2
+    4300004: mesh3
+    4300006: mesh4
+    4300008: mesh5
+    4300010: mesh6
+    4300012: mesh7
+    4300014: mesh8
+    4300016: mesh9
+    4300018: mesh10
+    4300020: mesh11
+    4300022: mesh12
+    4300024: mesh13
+    4300026: mesh14
+    4300028: mesh15
+    4300030: mesh16
+    4300032: mesh17
+    4300034: mesh18
+    4300036: mesh19
+    4300038: mesh20
+    4300040: mesh21
+    4300042: mesh22
+    4300044: mesh23
+    4300046: mesh24
+    4300048: mesh25
+    4300050: mesh26
+    4300052: mesh27
+    4300054: mesh28
+    4300056: mesh29
+    4300058: mesh30
+    4300060: mesh31
+    4300062: mesh32
+    4300064: mesh33
+    4300066: mesh34
+    4300068: mesh35
+    4300070: mesh36
+    4300072: mesh37
+    4300074: mesh38
+    4300076: mesh39
+    4300078: mesh40
+    4300080: mesh41
+    4300082: mesh42
+    4300084: mesh43
+    4300086: mesh44
+    4300088: mesh45
+    4300090: mesh46
+    4300092: mesh47
+    4300094: mesh48
+    4300096: mesh49
+    4300098: mesh50
+    4300100: mesh51
+    4300102: mesh52
+    4300104: mesh53
+    4300106: mesh54
+    4300108: mesh55
+    4300110: mesh56
+    4300112: mesh57
+    4300114: mesh58
+    4300116: mesh59
+    4300118: mesh60
+    4300120: mesh61
+    4300122: mesh62
+    4300124: mesh63
+    4300126: mesh64
+    4300128: mesh65
+    4300130: mesh66
+    4300132: mesh67
+    4300134: mesh68
+    4300136: mesh69
+    4300138: mesh70
+    4300140: mesh71
+    4300142: mesh72
+    4300144: mesh73
+    4300146: mesh74
+    4300148: mesh75
+    4300150: mesh76
+    4300152: mesh77
+    4300154: mesh78
+    4300156: mesh79
+    4300158: mesh80
+    4300160: mesh81
+    4300162: mesh82
+    4300164: mesh83
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

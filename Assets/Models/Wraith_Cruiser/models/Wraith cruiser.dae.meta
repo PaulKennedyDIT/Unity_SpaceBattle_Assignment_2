@@ -1,0 +1,206 @@
+fileFormatVersion: 2
+guid: b749628b47d70244fbf3cbfdee1a3379
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: __1_SubD_object_
+    100002: Camera
+    100004: Component_15
+    100006: Component_15_1
+    100008: Component_15_1_2
+    100010: Component_15_2
+    100012: Component_16
+    100014: Component_16_1
+    100016: Component_17
+    100018: Component_17 1
+    100020: Component_17 2
+    100022: Component_17 3
+    100024: Component_17 4
+    100026: Component_17 5
+    100028: Component_17_1
+    100030: Component_17_10
+    100032: Component_17_11
+    100034: Component_17_12
+    100036: Component_17_1_2
+    100038: Component_17_1_2 1
+    100040: Component_17_1_2 2
+    100042: Component_17_1_2 3
+    100044: Component_17_1_2 4
+    100046: Component_17_1_2 5
+    100048: Component_17_2
+    100050: Component_17_3
+    100052: Component_17_4
+    100054: Component_17_5
+    100056: Component_17_6
+    100058: Component_17_7
+    100060: Component_17_8
+    100062: Component_17_9
+    100064: Component_18
+    100066: Component_18_1
+    100068: Component_18_1_2
+    100070: Component_18_2
+    100072: mesh1
+    100074: mesh2
+    100076: mesh3
+    100078: mesh4
+    100080: mesh4 1
+    100082: mesh4 2
+    100084: mesh4 3
+    100086: mesh4 4
+    100088: mesh4 5
+    100090: mesh5
+    100092: mesh5 1
+    100094: mesh5 2
+    100096: mesh5 3
+    100098: mesh5 4
+    100100: mesh5 5
+    100102: Model
+    100104: object
+    100106: Raumschiff_1
+    100108: Raumschiff_1_1
+    100110: //RootNode
+    400000: __1_SubD_object_
+    400002: Camera
+    400004: Component_15
+    400006: Component_15_1
+    400008: Component_15_1_2
+    400010: Component_15_2
+    400012: Component_16
+    400014: Component_16_1
+    400016: Component_17
+    400018: Component_17 1
+    400020: Component_17 2
+    400022: Component_17 3
+    400024: Component_17 4
+    400026: Component_17 5
+    400028: Component_17_1
+    400030: Component_17_10
+    400032: Component_17_11
+    400034: Component_17_12
+    400036: Component_17_1_2
+    400038: Component_17_1_2 1
+    400040: Component_17_1_2 2
+    400042: Component_17_1_2 3
+    400044: Component_17_1_2 4
+    400046: Component_17_1_2 5
+    400048: Component_17_2
+    400050: Component_17_3
+    400052: Component_17_4
+    400054: Component_17_5
+    400056: Component_17_6
+    400058: Component_17_7
+    400060: Component_17_8
+    400062: Component_17_9
+    400064: Component_18
+    400066: Component_18_1
+    400068: Component_18_1_2
+    400070: Component_18_2
+    400072: mesh1
+    400074: mesh2
+    400076: mesh3
+    400078: mesh4
+    400080: mesh4 1
+    400082: mesh4 2
+    400084: mesh4 3
+    400086: mesh4 4
+    400088: mesh4 5
+    400090: mesh5
+    400092: mesh5 1
+    400094: mesh5 2
+    400096: mesh5 3
+    400098: mesh5 4
+    400100: mesh5 5
+    400102: Model
+    400104: object
+    400106: Raumschiff_1
+    400108: Raumschiff_1_1
+    400110: //RootNode
+    2300000: mesh1
+    2300002: mesh2
+    2300004: mesh3
+    2300006: mesh4
+    2300008: mesh4 1
+    2300010: mesh4 2
+    2300012: mesh4 3
+    2300014: mesh4 4
+    2300016: mesh4 5
+    2300018: mesh5
+    2300020: mesh5 1
+    2300022: mesh5 2
+    2300024: mesh5 3
+    2300026: mesh5 4
+    2300028: mesh5 5
+    3300000: mesh1
+    3300002: mesh2
+    3300004: mesh3
+    3300006: mesh4
+    3300008: mesh4 1
+    3300010: mesh4 2
+    3300012: mesh4 3
+    3300014: mesh4 4
+    3300016: mesh4 5
+    3300018: mesh5
+    3300020: mesh5 1
+    3300022: mesh5 2
+    3300024: mesh5 3
+    3300026: mesh5 4
+    3300028: mesh5 5
+    4300000: mesh1
+    4300002: mesh2
+    4300004: mesh3
+    4300006: mesh4
+    4300008: mesh5
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
