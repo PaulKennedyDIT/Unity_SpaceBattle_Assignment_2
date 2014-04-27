@@ -12,7 +12,7 @@ namespace BGE
         public enum camModes  {fps = 0, following = 1, boid = 2};
         private static Dictionary<string, object> dictionary = new Dictionary<string, object>();
 
-        public static bool showMessages = true;
+        public static bool showMessages = false;
         public static bool drawVectors = false;
         public static bool drawDebugLines = false;
         public static bool cellSpacePartitioning = false;

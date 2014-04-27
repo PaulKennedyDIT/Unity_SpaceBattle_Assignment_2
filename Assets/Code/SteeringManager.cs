@@ -18,8 +18,16 @@ namespace BGE
 
         public GameObject boidPrefab;
         public GameObject leaderPrefab;
+		public GameObject wraithPrefab;
+		public GameObject auroraPrefab;
+		public GameObject tauriPrefab;
+		public GameObject asauranPrefab;
+		public GameObject gliderPrefab;
+		public GameObject wraithDartPrefab;
+
         public Space space;
         static SteeringManager instance;
+
         // Use this for initialization
         GUIStyle style = new GUIStyle();
 
@@ -28,11 +36,11 @@ namespace BGE
         
         GameObject monoCamera;
         GameObject activeCamera;
-        GameObject riftCamera;             
+        //GameObject riftCamera;             
         
         void Awake()
         {
-            DontDestroyOnLoad(this);
+            //DontDestroyOnLoad(this);
         }
 
         void Start()
@@ -44,21 +52,23 @@ namespace BGE
             style.normal.textColor = Color.white;
 
             space = new Space();
-            
-            scenarios.Add(new SeekScenario());
-            scenarios.Add(new ArriveScenario());
-            scenarios.Add(new PursueScenario());
-            scenarios.Add(new WanderScenario());
-            scenarios.Add(new PathFollowingScenario());
-            scenarios.Add(new ObstacleAvoidanceScenario());
-            scenarios.Add(new FlockingScenario());
-            scenarios.Add(new StateMachineScenario());
-            scenarios.Add(new PathFindingScenario());
-            currentScenario = scenarios[0];
+			scenarios.Add (new Title_Scenario ());
+			scenarios.Add(new Opening_Scenario());
+			scenarios.Add (new Second_Scenario ());
+			//scenarios.Add(new SeekScenario());
+            //scenarios.Add(new ArriveScenario());
+            //scenarios.Add(new PursueScenario());
+            //scenarios.Add(new WanderScenario());
+            //scenarios.Add(new PathFollowingScenario());
+            //scenarios.Add(new ObstacleAvoidanceScenario());
+            //scenarios.Add(new FlockingScenario());
+            //scenarios.Add(new StateMachineScenario());
+            //scenarios.Add(new PathFindingScenario());
+			currentScenario = scenarios[Application.loadedLevel];
             currentScenario.Start();
 
             monoCamera = GameObject.FindGameObjectWithTag("MainCamera");
-            riftCamera = GameObject.FindGameObjectWithTag("ovrcamera");
+            //riftCamera = GameObject.FindGameObjectWithTag("ovrcamera");
 
             activeCamera = monoCamera;
 
@@ -206,16 +216,7 @@ namespace BGE
                 
             }
             Params.timeModifier = timeModifiers[timeModIndex];
-            if (Params.riftEnabled)
-            {
-                riftCamera.SetActive(true);
-                activeCamera = riftCamera;
-            }
-            else
-            {
-                riftCamera.SetActive(false);
-                activeCamera = monoCamera;
-            }
+            
             PrintMessage("Press F1 to toggle camera mode");
             PrintMessage("Press F2 to adjust speed");
             PrintMessage("Press F4 to toggle messages");

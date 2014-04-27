@@ -13,8 +13,15 @@ namespace BGE.Scenarios
 
         public GameObject leaderPrefab = SteeringManager.Instance.leaderPrefab;
         public GameObject boidPrefab = SteeringManager.Instance.boidPrefab;
+		public GameObject wraithPrefab = SteeringManager.Instance.wraithPrefab;
 
-        public abstract string Description();
+		public GameObject auroraPrefab = SteeringManager.Instance.auroraPrefab;
+		public GameObject tauriPrefab = SteeringManager.Instance.tauriPrefab;
+		public GameObject asauranPrefab = SteeringManager.Instance.asauranPrefab;
+		public GameObject gliderPrefab = SteeringManager.Instance.gliderPrefab;
+		public GameObject wraithDartPrefab = SteeringManager.Instance.wraithDartPrefab;
+
+		public abstract string Description();
         public abstract void Start();
 
         public GameObject leader;
