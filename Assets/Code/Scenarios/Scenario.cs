@@ -28,7 +28,7 @@ namespace BGE.Scenarios
 
         public virtual void Update()
         {
-            if (Input.GetMouseButtonDown(0))
+            /*if (Input.GetMouseButtonDown(0))
             {
                 GameObject camera = (GameObject)GameObject.FindGameObjectWithTag("MainCamera");
                 Vector3 newTargetPos = camera.transform.position + camera.transform.forward * 200.0f;
@@ -41,6 +41,7 @@ namespace BGE.Scenarios
                 Vector3 newTargetPos = camera.transform.position;
                 leader.GetComponent<SteeringBehaviours>().seekTargetPos = newTargetPos;
             }
+            */
         }
 
         public void DestroyObjectsWithTag(string tag)

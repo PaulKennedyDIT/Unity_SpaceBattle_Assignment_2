@@ -25,7 +25,10 @@ namespace BGE.Scenarios
 			leader.GetComponent<SteeringBehaviours>().ObstacleAvoidanceEnabled = true;
 			leader.GetComponent<SteeringBehaviours>().PlaneAvoidanceEnabled = true;
 			leader.GetComponent<SteeringBehaviours>().seekTargetPos = new Vector3(-1000, 0, 1000);
+			leader.AddComponent<Rigidbody> ();
+			leader.rigidbody.useGravity = false;
 			leader.tag = "leader";
+			leader.rigidbody.velocity = new Vector3 (-10 ,0,10);
 
 			GameObject camFollower;
 			camFollower = CreateCamFollower(leader, new Vector3(-78.85415f ,40f, 99.08089f));
@@ -56,6 +59,9 @@ namespace BGE.Scenarios
 				fleet.GetComponent<SteeringBehaviours>().OffsetPursuitEnabled = true;
 				fleet.GetComponent<SteeringBehaviours>().SeparationEnabled = true;
 				fleet.GetComponent<SteeringBehaviours>().PlaneAvoidanceEnabled = true;
+				fleet.AddComponent<Rigidbody> ();
+				fleet.rigidbody.useGravity = false;
+				fleet.rigidbody.velocity = new Vector3 (-10 ,0,10);
 			}
 
 			prefabList.Add (wraithPrefab);
@@ -82,16 +88,30 @@ namespace BGE.Scenarios
 					fleet.GetComponent<SteeringBehaviours>().OffsetPursuitEnabled = true;
 					fleet.GetComponent<SteeringBehaviours>().SeparationEnabled = true;
 					fleet.GetComponent<SteeringBehaviours>().PlaneAvoidanceEnabled = true;
+					fleet.AddComponent<Rigidbody> ();
+					fleet.rigidbody.useGravity = false;
+					fleet.rigidbody.velocity = new Vector3 (-10 ,0,10);
 				}
 			}
 			GroundEnabled(true);
 		}
 
-		void Update()
+		public override void Update()
 		{
-			if(leader.transform.position.x < -250)
+			leader = GameObject.FindGameObjectWithTag ("leader");
+			if(leader.transform.position.x < -200.0f)
 			{
-				Params.timeModifier *= 1.2f;
+				leader.rigidbody.velocity = new Vector3 (-200 ,0,200);
+			}
+
+			GameObject[] ships = GameObject.FindGameObjectsWithTag ("boid");
+
+			foreach(GameObject ship in ships)
+			{
+				if(ship.transform.position.x < -210.0f)
+				{
+					ship.rigidbody.velocity = new Vector3 (-200 ,0,200);
+				}
 			}
 		}
 	}

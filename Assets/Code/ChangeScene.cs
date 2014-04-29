@@ -13,9 +13,18 @@ public class ChangeScene : MonoBehaviour {
 
 		if(Application.loadedLevel == 1)
 		{
-			Invoke ("LLoad", 40);
+			Invoke ("LLoad", 22);
 		}
 
+		if(Application.loadedLevel == 2)
+		{
+			Invoke ("LLoad", 4);
+		}
+
+		if(Application.loadedLevel == 3)
+		{
+			Invoke ("LLoad", 22);
+		}
 	}
 	
 	// Update is called once per frame

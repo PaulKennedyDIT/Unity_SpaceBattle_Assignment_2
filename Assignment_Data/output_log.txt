@@ -19,11 +19,11 @@ Platform assembly: E:\PaulDIT\Dropbox\Games Engines\Assignment_Semester2_Unity\A
 Loading E:\PaulDIT\Dropbox\Games Engines\Assignment_Semester2_Unity\Assignment_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
 Platform assembly: E:\PaulDIT\Dropbox\Games Engines\Assignment_Semester2_Unity\Assignment_Data\Managed\Vectrosity.dll (this message is harmless)
 Loading E:\PaulDIT\Dropbox\Games Engines\Assignment_Semester2_Unity\Assignment_Data\Managed\Vectrosity.dll into Unity Child Domain
-- Completed reload, in  0.041 seconds
+- Completed reload, in  0.042 seconds
 desktop: 1920x1080 60Hz; virtual: 5368x1080 at -1768,0
 <RI> Initializing input.
 <RI> Input initialized.
-UnloadTime: 1.444685 ms
+UnloadTime: 2.454268 ms
 HDR and MultisampleAntiAliasing (in Forward Rendering Path) is not supported. This camera will render without HDR buffers. Disable Antialiasing in the Quality settings if you want to use HDR.
  
 (Filename:  Line: 2237)
@@ -34,11 +34,17 @@ HDR RenderTexture format is not supported on this platform. This camera will ren
 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 21101.
-Total: 4.331654 ms (FindLiveObjects: 0.837803 ms CreateObjectMapping: 0.835701 ms MarkObjects: 1.718248 ms  DeleteObjects: 0.140835 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 21105.
+Total: 3.078570 ms (FindLiveObjects: 0.698774 ms CreateObjectMapping: 0.601480 ms MarkObjects: 1.234491 ms  DeleteObjects: 0.086783 ms)
 
 Loading default.txt
  
 (Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
 
 Platform assembly: E:\PaulDIT\Dropbox\Games Engines\Assignment_Semester2_Unity\Assignment_Data\Managed\System.Core.dll (this message is harmless)
+UnloadTime: 9.684344 ms
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 21159.
+Total: 3.261747 ms (FindLiveObjects: 0.655832 ms CreateObjectMapping: 0.445629 ms MarkObjects: 1.611955 ms  DeleteObjects: 0.102398 ms)
+

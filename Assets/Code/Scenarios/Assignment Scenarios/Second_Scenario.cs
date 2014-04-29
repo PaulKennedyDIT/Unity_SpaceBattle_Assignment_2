@@ -17,6 +17,7 @@ namespace BGE.Scenarios
 		
 		public override void Start()
 		{
+
 			Params.Load("default.txt");
 			float range = Params.GetFloat("world_range");
 			
@@ -24,21 +25,19 @@ namespace BGE.Scenarios
 			leader.GetComponent<SteeringBehaviours>().SeekEnabled = true;
 			leader.GetComponent<SteeringBehaviours>().ObstacleAvoidanceEnabled = true;
 			leader.GetComponent<SteeringBehaviours>().PlaneAvoidanceEnabled = true;
-			leader.GetComponent<SteeringBehaviours>().seekTargetPos = new Vector3(-1000, 90, 1000);
+			leader.GetComponent<SteeringBehaviours>().seekTargetPos = new Vector3(-1000, 120, 1000);
 			leader.tag = "leader";
-
+			leader.AddComponent<Rigidbody> ();
+			leader.rigidbody.useGravity = false;
 			GameObject camFollower;
-			camFollower = CreateCamFollower(leader, new Vector3(-95,90, 100));
-			camFollower.transform.Rotate (new Vector3 (0, 90, 0));
+			camFollower = CreateCamFollower(leader, new Vector3(-100,10, 90));
+			camFollower.transform.Rotate (new Vector3 (0, 180, 0));
 			GroundEnabled(true);
 		}
-		
-		void Update()
+
+		public override void Update()
 		{
-			if(leader.transform.position.x < -250)
-			{
-				Params.timeModifier *= 1.2f;
-			}
+			leader.rigidbody.velocity = new Vector3 (-200 ,0,200);
 		}
 	}
 }
