@@ -2,38 +2,50 @@
 using System.Collections;
 
 public class ChangeScene : MonoBehaviour {
-
+	
 	// Use this for initialization
 	void Start () 
 	{
-		if(Application.loadedLevel == 0)
-		{
-			Invoke ("LLoad", 2);
-		}
-
-		if(Application.loadedLevel == 1)
-		{
-			Invoke ("LLoad", 22);
-		}
-
-		if(Application.loadedLevel == 2)
-		{
-			Invoke ("LLoad", 4);
-		}
-
-		if(Application.loadedLevel == 3)
-		{
-			Invoke ("LLoad", 22);
-		}
+		StartCoroutine ("Change");
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-
-	void LLoad()
+	void OnLevelWasLoaded(int level)
 	{
-		Application.LoadLevel (Application.loadedLevel + 1);
+		StartCoroutine ("Change");
+	}
+	
+	IEnumerator Change()
+	{
+		// Scene 0
+		int current = Application.loadedLevel;
+		Debug.Log (current);
+		if(current == 0)
+		{
+			yield return new WaitForSeconds(2.0f);
+		}
+		
+		if(current == 1)
+		{
+			yield return new WaitForSeconds(22.0f);
+		}
+		
+		if(current == 2)
+		{
+			// Scene 2
+			yield return new WaitForSeconds(2.0f);
+		}
+		
+		if(current == 3)
+		{
+			// Scene 2
+			yield return new WaitForSeconds(3.0f);
+		}
+		
+		if(current < 3)
+		{
+			Application.LoadLevel (Application.loadedLevel + 1);
+		}
+		
+		
 	}
 }
