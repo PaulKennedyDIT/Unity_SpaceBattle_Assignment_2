@@ -69,7 +69,7 @@ namespace BGE
 						points[1] = lines[i].end;
 						vectrocityLine = Vectrosity.VectorLine.SetLine3D(lines[i].color, points);
                         vectrocityLine.SetColor(lines[i].color);
-                        vectrocityLine.SetWidth(1, 0);
+						vectrocityLine.SetWidth(1, 0);
 						vectrosityLines.Add(vectrocityLine);
 					}
 					else

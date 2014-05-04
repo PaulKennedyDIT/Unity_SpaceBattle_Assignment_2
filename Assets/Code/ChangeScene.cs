@@ -26,22 +26,34 @@ public class ChangeScene : MonoBehaviour {
 		
 		if(current == 1)
 		{
-			yield return new WaitForSeconds(22.0f);
+			yield return new WaitForSeconds(11f);
 		}
 		
 		if(current == 2)
 		{
 			// Scene 2
-			yield return new WaitForSeconds(2.0f);
+			yield return new WaitForSeconds(22.0f);
 		}
 		
 		if(current == 3)
 		{
 			// Scene 2
+			yield return new WaitForSeconds(2.0f);
+		}
+
+		if(current == 4)
+		{
+			// Scene 2
+			yield return new WaitForSeconds(28f);
+		}
+
+		if(current == 5)
+		{
+			// Scene 2
 			yield return new WaitForSeconds(3.0f);
 		}
 		
-		if(current < 3)
+		if(current < 5)
 		{
 			Application.LoadLevel (Application.loadedLevel + 1);
 		}

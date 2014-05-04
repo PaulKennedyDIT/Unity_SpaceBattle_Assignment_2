@@ -54,8 +54,10 @@ namespace BGE
             space = new Space();
 			scenarios.Add (new Title_Scenario ());
 			scenarios.Add(new Opening_Scenario());
+			scenarios.Add (new Opening_Scenario_Part_2 ());
 			scenarios.Add (new Second_Scenario ());
 			scenarios.Add (new Third_Scenario ());
+			scenarios.Add (new Fourth_Scenario ());
 			//scenarios.Add(new SeekScenario());
             //scenarios.Add(new ArriveScenario());
             //scenarios.Add(new PursueScenario());

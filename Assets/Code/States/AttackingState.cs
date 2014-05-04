@@ -8,14 +8,22 @@ namespace BGE.States
     class AttackingState:State
     {
         float timeShot = 0.25f;
-
+		GameObject target = null;
+		Color col;
         public override string Description()
         {
             return "Attacking State";
         }
 
-        public AttackingState(GameObject entity):base(entity)
+        public AttackingState(GameObject entity,GameObject Etarget,Color shipCol):base(entity)
         {
+			this.target = Etarget;
+			this.col = shipCol;
+			entity.GetComponent<SteeringBehaviours>().TurnOffAll();
+			entity.GetComponent<SteeringBehaviours>().OffsetPursuitEnabled = true;
+			entity.GetComponent<SteeringBehaviours>().ObstacleAvoidanceEnabled = true;
+			entity.GetComponent<SteeringBehaviours>().offset = new Vector3(0, 0, 5);
+			entity.GetComponent<SteeringBehaviours> ().leader = target;
         }
 
         public override void Enter()
@@ -24,7 +32,7 @@ namespace BGE.States
             entity.GetComponent<SteeringBehaviours>().OffsetPursuitEnabled = true;
             entity.GetComponent<SteeringBehaviours>().ObstacleAvoidanceEnabled = true;
             entity.GetComponent<SteeringBehaviours>().offset = new Vector3(0, 0, 5);
-            entity.GetComponent<SteeringBehaviours>().leader = SteeringManager.Instance.currentScenario.leader;
+			entity.GetComponent<SteeringBehaviours> ().leader = target;
         }
 
         public override void Exit()
@@ -33,16 +41,13 @@ namespace BGE.States
 
         public override void Update()
         {
-            float range = 50.0f;
+            float range = 500.0f;
             timeShot += Time.deltaTime;
-            float fov = Mathf.PI / 4.0f;
+            float fov = Mathf.PI / 6.0f;
             // Can I see the leader?
-            GameObject leader = SteeringManager.Instance.currentScenario.leader;
-            if ((leader.transform.position - entity.transform.position).magnitude > range)
-            {
-                entity.GetComponent<StateMachine>().SwicthState(new IdleState(entity));
-            }
-            else
+			GameObject leader = target;
+           
+			if ((leader.transform.position - entity.transform.position).magnitude < range)
             {
                 float angle;
                 Vector3 toEnemy = (leader.transform.position - entity.transform.position);
@@ -52,12 +57,29 @@ namespace BGE.States
                 {
                     if (timeShot > 0.5f)
                     {
-                        GameObject lazer = new GameObject();
-                        lazer.AddComponent<Lazer>();
-                        lazer.transform.position = entity.transform.position;
-                        lazer.transform.forward = entity.transform.forward;
-                        timeShot = 0.0f;
-                        entity.GetComponent<AudioSource>().Play();
+						if(leader.tag == "enemyLeader")
+						{
+			                GameObject lazer = new GameObject();
+							lazer.AddComponent<goodLazer>();
+							lazer.GetComponent<goodLazer>().SetColor(this.col);
+							lazer.transform.position = entity.transform.position;
+			                
+							lazer.transform.LookAt(lazer.transform.position + entity.transform.rotation * Vector3.forward,entity.transform.rotation * Vector3.up);
+			                timeShot = 0.0f;
+			                //entity.GetComponent<AudioSource>().Play();
+						}
+
+						if(leader.tag == "leader")
+						{
+							GameObject lazer = new GameObject();
+							lazer.AddComponent<goodLazer>();
+							lazer.GetComponent<goodLazer>().SetColor(this.col);
+							lazer.transform.position = entity.transform.position + new Vector3(-25,15,0);
+							
+							lazer.transform.LookAt(lazer.transform.position + entity.transform.rotation * Vector3.forward,entity.transform.rotation * Vector3.up);
+							timeShot = 0.0f;
+							//entity.GetComponent<AudioSource>().Play();
+						}
                     }
                 }
             }

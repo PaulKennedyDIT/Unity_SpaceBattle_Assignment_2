@@ -47,7 +47,7 @@ namespace BGE.States
             if ((leader.transform.position - entity.transform.position).magnitude < range)
             {
                 // Is the leader inside my FOV
-                entity.GetComponent<StateMachine>().SwicthState(new AttackingState(entity));
+                entity.GetComponent<StateMachine>().SwicthState(new AttackingState(entity,leader,Color.red));
             }
         }
     }

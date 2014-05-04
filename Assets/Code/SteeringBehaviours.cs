@@ -704,7 +704,7 @@ namespace BGE
 
         private Vector3 FollowPath()
         {
-            float epsilon = 5.0f;
+            float epsilon = 10.0f;
             float dist = (transform.position - path.NextWaypoint()).magnitude;
             if (dist < epsilon)
             {
