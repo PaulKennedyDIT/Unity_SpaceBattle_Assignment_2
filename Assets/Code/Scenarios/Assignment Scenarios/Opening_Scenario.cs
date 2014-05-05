@@ -25,6 +25,8 @@ namespace BGE.Scenarios
 			leader.GetComponent<SteeringBehaviours>().ObstacleAvoidanceEnabled = true;
 			leader.GetComponent<SteeringBehaviours>().PlaneAvoidanceEnabled = true;
 			leader.GetComponent<SteeringBehaviours>().seekTargetPos = new Vector3(-1000, 0, 1000);
+			leader.AddComponent<MeshCollider> ();
+			leader.AddComponent<MeshRenderer> ();
 			leader.AddComponent<Rigidbody> ();
 			leader.rigidbody.useGravity = false;
 			leader.tag = "leader";

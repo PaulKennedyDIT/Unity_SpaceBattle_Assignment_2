@@ -24,6 +24,7 @@ namespace BGE
 		public GameObject asauranPrefab;
 		public GameObject gliderPrefab;
 		public GameObject wraithDartPrefab;
+		public GameObject marsPrefab;
 
         public Space space;
         static SteeringManager instance;
@@ -58,6 +59,7 @@ namespace BGE
 			scenarios.Add (new Second_Scenario ());
 			scenarios.Add (new Third_Scenario ());
 			scenarios.Add (new Fourth_Scenario ());
+			scenarios.Add (new Closing_Scenario ());
 			//scenarios.Add(new SeekScenario());
             //scenarios.Add(new ArriveScenario());
             //scenarios.Add(new PursueScenario());

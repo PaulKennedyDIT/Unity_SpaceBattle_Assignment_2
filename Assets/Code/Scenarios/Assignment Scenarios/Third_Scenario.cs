@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 using BGE.States;
+using System.Collections;
 
 namespace BGE.Scenarios
 {
@@ -11,6 +12,7 @@ namespace BGE.Scenarios
 	{
 		static Vector3 initialPos = Vector3.zero;
 		List<GameObject> prefabList = new List<GameObject>();
+		List<int> validAxis = new List<int>();
 		GameObject enemyLeader = null;
 		AudioSource audio;
 		AudioClip clip;
@@ -25,18 +27,19 @@ namespace BGE.Scenarios
 		{
 			Params.Load("default.txt");
 			float range = Params.GetFloat("world_range");
-			
-			leader = CreateBoid(new Vector3(120, 90, 900), leaderPrefab);
-			leader.GetComponent<SteeringBehaviours>().offset = new Vector3(-5,0,-200);
+
+			validAxis.Add(10);
+			validAxis.Add(40);
+			validAxis.Add(70);
+
+			leader = CreateBoid(new Vector3(120, 140, 950), leaderPrefab);
+			leader.GetComponent<SteeringBehaviours>().offset = new Vector3(-30,10,-550);
 			leader.GetComponent<SteeringBehaviours>().OffsetPursuitEnabled = true;
 			leader.GetComponent<SteeringBehaviours>().ObstacleAvoidanceEnabled = true;
+			leader.GetComponent<SteeringBehaviours>().SeparationEnabled = true;
 			leader.AddComponent<MeshCollider> ();
-			leader.tag = "leader";
-
-			audio = leader.AddComponent<AudioSource>();
-			AudioClip clip = Resources.Load<AudioClip>("Audio/lazer");
-			audio.loop = false;
-			audio.clip = clip;       
+			leader.AddComponent<MeshRenderer> ();
+			leader.tag = "leader";  
 
 			enemyLeader = CreateBoid(new Vector3(120, 90, 600), auroraPrefab);
 			enemyLeader.tag = "enemyLeader";
@@ -58,52 +61,140 @@ namespace BGE.Scenarios
 			enemyLeader.GetComponent<SteeringBehaviours>().ObstacleAvoidanceEnabled = true;
 
 			leader.GetComponent<SteeringBehaviours>().leader = enemyLeader;
-			//leader.AddComponent<StateMachine>();
-			//leader.GetComponent<StateMachine>().SwicthState(new AttackingState(leader,enemyLeader,Color.yellow));
+
+			// Static Ships
+			GameObject fleet = null;
+			prefabList.Add (auroraPrefab);
+			
+			int prefabIndex;
+			// Now make a fleet
+			int fleetSize = 4;
+			float xOff = 100;
+			float zOff = -100;
+			for (int i = 2; i < fleetSize; i++)
+			{
+				for (int j = 0; j < i; j++)
+				{
+					prefabIndex = UnityEngine.Random.Range(0,1);
+
+					int axisIndex = UnityEngine.Random.Range(0,3);
+					float z = (i - 1) * zOff;
+					Vector3 offset = new Vector3((xOff * (-i / 2.0f)) + (j * xOff), validAxis[axisIndex], z);
+					fleet = CreateBoid(new Vector3(enemyLeader.transform.position.x,-80,enemyLeader.transform.position.z) + offset, prefabList[prefabIndex]);
+					fleet.GetComponent<SteeringBehaviours>().leader = enemyLeader;
+					fleet.GetComponent<SteeringBehaviours>().offset = offset;
+					fleet.GetComponent<SteeringBehaviours>().ObstacleAvoidanceEnabled = true;
+					fleet.GetComponent<SteeringBehaviours>().OffsetPursuitEnabled = true;
+					fleet.GetComponent<SteeringBehaviours>().SeparationEnabled = true;
+					fleet.GetComponent<SteeringBehaviours>().PlaneAvoidanceEnabled = true;
+					fleet.tag = "enemyFleet";
+				}
+			}
+
+			prefabList.RemoveAt (0);
+			prefabList.Add (gliderPrefab);
+			// Now make a fleet
+			fleetSize = 4;
+			xOff = 20;
+			zOff = -100;
+			for (int i = 2; i < fleetSize; i++)
+			{
+				for (int j = 0; j < i; j++)
+				{
+					prefabIndex = UnityEngine.Random.Range(0,1);
+					
+					float z = (i - 1) * zOff;
+					
+					
+					int axisIndex = UnityEngine.Random.Range(0,3);
+					Vector3 offset = new Vector3((xOff * (-i / 2.0f)) + (j * xOff),validAxis[axisIndex], z);
+					fleet = CreateBoid(new Vector3(leader.transform.position.x,50,leader.transform.position.z) + offset, prefabList[prefabIndex]);
+					fleet.GetComponent<SteeringBehaviours>().leader = enemyLeader;
+					fleet.GetComponent<SteeringBehaviours>().offset = offset;
+					fleet.GetComponent<SteeringBehaviours>().ObstacleAvoidanceEnabled = true;
+					fleet.GetComponent<SteeringBehaviours>().OffsetPursuitEnabled = true;
+					fleet.GetComponent<SteeringBehaviours>().SeparationEnabled = true;
+					fleet.GetComponent<SteeringBehaviours>().PlaneAvoidanceEnabled = true;
+					fleet.AddComponent<MeshRenderer> ();
+					fleet.AddComponent<Rigidbody> ();
+					fleet.rigidbody.useGravity = false;
+					fleet.rigidbody.velocity = new Vector3 (-10 ,0,10);
+					fleet.tag = "fleet";
+				}
+			}
+
+			prefabList.RemoveAt (0);
+			prefabList.Add (wraithDartPrefab);
+			// Now make a fleet
+			fleetSize = 4;
+			xOff = 20;
+			zOff = -20;
+			for (int i = 2; i < fleetSize; i++)
+			{
+				for (int j = 0; j < i; j++)
+				{
+					prefabIndex = UnityEngine.Random.Range(0,1);
+					
+					float z = (i - 1) * zOff;
+					
+					
+					int axisIndex = UnityEngine.Random.Range(0,3);
+					Vector3 offset = new Vector3((xOff * (-i / 2.0f)) + (j * xOff),validAxis[axisIndex], z);
+					fleet = CreateBoid(new Vector3(leader.transform.position.x,0,leader.transform.position.z) + offset, prefabList[prefabIndex]);
+					fleet.GetComponent<SteeringBehaviours>().leader = leader;
+					fleet.GetComponent<SteeringBehaviours>().offset = offset;
+					fleet.GetComponent<SteeringBehaviours>().ObstacleAvoidanceEnabled = true;
+					fleet.GetComponent<SteeringBehaviours>().OffsetPursuitEnabled = true;
+					fleet.GetComponent<SteeringBehaviours>().SeparationEnabled = true;
+					fleet.GetComponent<SteeringBehaviours>().PlaneAvoidanceEnabled = true;
+					fleet.AddComponent<MeshRenderer> ();
+					fleet.AddComponent<Rigidbody> ();
+					fleet.rigidbody.useGravity = false;
+					fleet.rigidbody.velocity = new Vector3 (-10 ,0,10);
+					fleet.tag = "enemyFighter";
+				}
+				
+			}
+			prefabList.RemoveAt (0);
+			prefabList.Add (wraithPrefab);
+			prefabList.Add (asauranPrefab);
+			prefabList.Add (tauriPrefab);
+		
+			// Now make a fleet
+			 fleetSize = 5;
+			 xOff = 120;
+			 zOff = -350;
+			for (int i = 2; i < fleetSize; i++)
+			{
+				for (int j = 0; j < i; j++)
+				{
+					prefabIndex = UnityEngine.Random.Range(0,3);
+					
+					float z = (i - 1) * zOff;
+
+
+					int axisIndex = UnityEngine.Random.Range(0,3);
+					Vector3 offset = new Vector3((xOff * (-i / 2.0f)) + (j * xOff),validAxis[axisIndex], z);
+					fleet = CreateBoid(new Vector3(leader.transform.position.x,50,leader.transform.position.z) + offset, prefabList[prefabIndex]);
+					fleet.GetComponent<SteeringBehaviours>().leader = enemyLeader;
+					fleet.GetComponent<SteeringBehaviours>().offset = offset;
+					fleet.GetComponent<SteeringBehaviours>().ObstacleAvoidanceEnabled = true;
+					fleet.GetComponent<SteeringBehaviours>().OffsetPursuitEnabled = true;
+					fleet.GetComponent<SteeringBehaviours>().SeparationEnabled = true;
+					fleet.GetComponent<SteeringBehaviours>().PlaneAvoidanceEnabled = true;
+					fleet.AddComponent<MeshRenderer> ();
+					fleet.AddComponent<Rigidbody> ();
+					fleet.rigidbody.useGravity = false;
+					fleet.rigidbody.velocity = new Vector3 (-10 ,0,10);
+					fleet.tag = "fleet";
+				}
+			}
 
 			GameObject camFollower;
-			camFollower = CreateCamFollower(leader, new Vector3(0,0,0));
+			camFollower = CreateCamFollower(leader, new Vector3(478.2176f ,127.5226f,165.9115f));
 		
 			GroundEnabled(true);
 		}
 
-		public override void Update()
-		{
-			leader = GameObject.FindGameObjectWithTag ("leader");
-			enemyLeader = GameObject.FindGameObjectWithTag ("enemyLeader");
-			float speed = 20.0f;
-			float range = 500.0f;
-			timeShot += Time.deltaTime;
-			float fov = Mathf.PI / 8.0f;
-			// Can I see the leader?
-
-			if ((enemyLeader.transform.position - leader.transform.position).magnitude < range)
-			{
-				float angle;
-				Vector3 toEnemy = (enemyLeader.transform.position - leader.transform.position);
-				toEnemy.Normalize();
-				angle = (float) Math.Acos(Vector3.Dot(toEnemy, leader.transform.forward));
-				if (angle < fov)
-				{
-					if (timeShot > 0.5f)
-					{
-						if(leader.tag == "leader")
-						{
-							GameObject lazer = new GameObject();
-							lazer.AddComponent<goodLazer>();
-							lazer.GetComponent<goodLazer>().SetColor(Color.yellow);
-							lazer.transform.position = leader.transform.position + new Vector3(40,15,0);
-							lazer.transform.forward = leader.transform.forward;
-							//lazer.transform.rotation = Quaternion.LookRotation(leader.transform.forward);
-							//lazer.transform.position = Vector3.Lerp(leader.transform.position + new Vector3(40,15,0), enemyLeader.transform.position, speed*Time.deltaTime);
-							//lazer.transform.LookAt(lazer.transform.position + leader.transform.rotation * Vector3.forward,leader.transform.rotation * Vector3.up);
-							timeShot = 0.0f;
-							//entity.GetComponent<AudioSource>().Play();
-						}
-					}
-				}
-			}
-
-		}
 	}
 }

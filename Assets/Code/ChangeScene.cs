@@ -6,7 +6,10 @@ public class ChangeScene : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-		StartCoroutine ("Change");
+		if(Application.loadedLevel == 0)
+		{
+			StartCoroutine ("Change");
+		}
 	}
 	
 	void OnLevelWasLoaded(int level)
@@ -44,16 +47,16 @@ public class ChangeScene : MonoBehaviour {
 		if(current == 4)
 		{
 			// Scene 2
-			yield return new WaitForSeconds(28f);
+			yield return new WaitForSeconds(62.8f);
 		}
 
 		if(current == 5)
 		{
 			// Scene 2
-			yield return new WaitForSeconds(3.0f);
+			yield return new WaitForSeconds(7f);
 		}
 		
-		if(current < 5)
+		if(current < 6)
 		{
 			Application.LoadLevel (Application.loadedLevel + 1);
 		}

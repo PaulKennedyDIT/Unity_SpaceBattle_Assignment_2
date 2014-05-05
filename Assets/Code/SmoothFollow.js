@@ -13,7 +13,7 @@ Then we apply the smoothed values to the transform's position.
 var target : Transform;
 var targetShip : GameObject;
 // The distance in the x-z plane to the target
-var distance = 150.0;
+var distance = 100.0;
 // the height we want the camera to be above the target
 var height =50.0;
 // How much we 

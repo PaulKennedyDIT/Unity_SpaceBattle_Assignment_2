@@ -25,7 +25,7 @@ namespace BGE
 
 			transform.position += transform.forward * speed;
 			LineDrawer.DrawLine(transform.position, transform.position + transform.forward * 5.0f, lazCol);
-
+			DelayedDestroy ();
 		}
 
 		public void SetColor(Color col)
@@ -33,13 +33,14 @@ namespace BGE
 			lazCol = col;
 		}
 
+		public void DelayedDestroy()
+		{
+			Destroy (gameObject, 2.5f);
+		}
 		void OnCollisionEnter(Collision collision)
 		{
-
-			GameObject explosion= new GameObject("Explosion");
-			explosion.transform.position = transform.position;
-			explosion.gameObject.AddComponent<Detonator> ();
-			explosion.gameObject.GetComponent<Detonator>().explodeOnStart = true;
+			GameObject shroom = (GameObject)MonoBehaviour.Instantiate(Resources.Load("Detonator-Base"));
+			shroom.transform.position =  transform.position;
 			Destroy(gameObject);
 		}
 	}

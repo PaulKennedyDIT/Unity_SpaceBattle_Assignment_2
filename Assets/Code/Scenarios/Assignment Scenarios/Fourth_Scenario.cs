@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 using BGE.States;
+using System.Collections;
 
 namespace BGE.Scenarios
 {
@@ -15,7 +16,7 @@ namespace BGE.Scenarios
 		AudioSource audio;
 		AudioClip clip;
 		float timeShot = 0.25f;
-		
+	
 		public override string Description()
 		{
 			return "Opening Scene";
@@ -27,25 +28,26 @@ namespace BGE.Scenarios
 
 			float range = Params.GetFloat("world_range");
 			
-			leader = CreateBoid(new Vector3(0, 0, 0), leaderPrefab);
+			leader = CreateBoid(new Vector3(0, 0, 0), marsPrefab);
 			leader.GetComponent<SteeringBehaviours>().SeekEnabled = true;
 			leader.GetComponent<SteeringBehaviours>().ObstacleAvoidanceEnabled = true;
 			leader.GetComponent<SteeringBehaviours>().PlaneAvoidanceEnabled = true;
-			leader.GetComponent<SteeringBehaviours>().seekTargetPos = new Vector3(-1000, 0, 1000);
+			leader.GetComponent<SteeringBehaviours>().seekTargetPos = new Vector3(1000, 0, 1000);
+			leader.AddComponent<MeshCollider> ();
+			leader.AddComponent<MeshRenderer> ();
 			leader.AddComponent<Rigidbody> ();
 			leader.rigidbody.useGravity = false;
 			leader.tag = "leader";
-			leader.rigidbody.velocity = new Vector3 (-10 ,0,10);
-		
+			leader.rigidbody.velocity = new Vector3 (-100 ,0,-100);
+
 			GameObject camFollower;
 			camFollower = CreateCamFollower(leader, new Vector3(0,0,0));
-			
 			GroundEnabled(true);
 		}
 		
 		public override void Update()
 		{
-			
+
 		}
 	}
 }
