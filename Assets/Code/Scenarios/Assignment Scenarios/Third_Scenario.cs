@@ -32,13 +32,15 @@ namespace BGE.Scenarios
 			validAxis.Add(40);
 			validAxis.Add(70);
 
-			leader = CreateBoid(new Vector3(120, 140, 950), leaderPrefab);
-			leader.GetComponent<SteeringBehaviours>().offset = new Vector3(-30,10,-550);
+			leader = GameObject.Find ("Tauri");
+			leader.transform.position = new Vector3(-100, 140, 950);
+			leader.AddComponent<SteeringBehaviours>();
+			leader.GetComponent<SteeringBehaviours>().offset = new Vector3(-50,40,-400);
 			leader.GetComponent<SteeringBehaviours>().OffsetPursuitEnabled = true;
 			leader.GetComponent<SteeringBehaviours>().ObstacleAvoidanceEnabled = true;
 			leader.GetComponent<SteeringBehaviours>().SeparationEnabled = true;
-			leader.AddComponent<MeshCollider> ();
-			leader.AddComponent<MeshRenderer> ();
+			//leader.AddComponent<MeshCollider> ();
+			//leader.AddComponent<MeshRenderer> ();
 			leader.tag = "leader";  
 
 			enemyLeader = CreateBoid(new Vector3(120, 90, 600), auroraPrefab);
@@ -69,7 +71,7 @@ namespace BGE.Scenarios
 			int prefabIndex;
 			// Now make a fleet
 			int fleetSize = 4;
-			float xOff = 100;
+			float xOff = 160;
 			float zOff = -100;
 			for (int i = 2; i < fleetSize; i++)
 			{

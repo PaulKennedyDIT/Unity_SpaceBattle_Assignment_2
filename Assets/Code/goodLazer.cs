@@ -35,7 +35,7 @@ namespace BGE
 
 		public void DelayedDestroy()
 		{
-			Destroy (gameObject, 2.5f);
+			Destroy (gameObject, 3.5f);
 		}
 		void OnCollisionEnter(Collision collision)
 		{

@@ -1,0 +1,106 @@
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvd3dum.dll 9.18.13.3523]
+    Renderer: NVIDIA GeForce GTX 770
+    Vendor:   NVIDIA
+    VRAM:     1990 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: E:\PaulDIT\Dropbox\Games Engines\Assignment\Unity_SpaceBattle_Assignment_2\Assignment_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\PaulDIT\Dropbox\Games Engines\Assignment\Unity_SpaceBattle_Assignment_2\Assignment_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\PaulDIT\Dropbox\Games Engines\Assignment\Unity_SpaceBattle_Assignment_2\Assignment_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading E:\PaulDIT\Dropbox\Games Engines\Assignment\Unity_SpaceBattle_Assignment_2\Assignment_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: E:\PaulDIT\Dropbox\Games Engines\Assignment\Unity_SpaceBattle_Assignment_2\Assignment_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\PaulDIT\Dropbox\Games Engines\Assignment\Unity_SpaceBattle_Assignment_2\Assignment_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: E:\PaulDIT\Dropbox\Games Engines\Assignment\Unity_SpaceBattle_Assignment_2\Assignment_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading E:\PaulDIT\Dropbox\Games Engines\Assignment\Unity_SpaceBattle_Assignment_2\Assignment_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: E:\PaulDIT\Dropbox\Games Engines\Assignment\Unity_SpaceBattle_Assignment_2\Assignment_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading E:\PaulDIT\Dropbox\Games Engines\Assignment\Unity_SpaceBattle_Assignment_2\Assignment_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: E:\PaulDIT\Dropbox\Games Engines\Assignment\Unity_SpaceBattle_Assignment_2\Assignment_Data\Managed\Vectrosity.dll (this message is harmless)
+Loading E:\PaulDIT\Dropbox\Games Engines\Assignment\Unity_SpaceBattle_Assignment_2\Assignment_Data\Managed\Vectrosity.dll into Unity Child Domain
+- Completed reload, in  0.044 seconds
+desktop: 1920x1080 60Hz; virtual: 5368x1080 at -1768,0
+<RI> Initializing input.
+<RI> Input initialized.
+0
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Loading default.txt
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Platform assembly: E:\PaulDIT\Dropbox\Games Engines\Assignment\Unity_SpaceBattle_Assignment_2\Assignment_Data\Managed\System.Core.dll (this message is harmless)
+UnloadTime: 9.076533 ms
+HDR and MultisampleAntiAliasing (in Forward Rendering Path) is not supported. This camera will render without HDR buffers. Disable Antialiasing in the Quality settings if you want to use HDR.
+ 
+(Filename:  Line: 2237)
+
+HDR RenderTexture format is not supported on this platform. This camera will render without HDR buffers.
+ 
+(Filename:  Line: 2239)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 10308.
+Total: 1.904132 ms (FindLiveObjects: 0.446829 ms CreateObjectMapping: 0.239630 ms MarkObjects: 0.723696 ms  DeleteObjects: 0.062460 ms)
+
+1
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+UnloadTime: 30.346598 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 378 unused Assets to reduce memory usage. Loaded Objects now: 9931.
+Total: 1.443188 ms (FindLiveObjects: 0.210802 ms CreateObjectMapping: 0.113809 ms MarkObjects: 0.619496 ms  DeleteObjects: 0.157051 ms)
+
+2
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+UnloadTime: 32.736298 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 9959.
+Total: 2.237753 ms (FindLiveObjects: 0.357644 ms CreateObjectMapping: 0.163056 ms MarkObjects: 1.008670 ms  DeleteObjects: 0.076873 ms)
+
+3
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+UnloadTime: 2.942531 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 23073.
+Total: 2.314326 ms (FindLiveObjects: 0.570849 ms CreateObjectMapping: 0.283172 ms MarkObjects: 0.998761 ms  DeleteObjects: 0.090086 ms)
+
+4
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+UnloadTime: 30.945976 ms
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 15777 unused Assets to reduce memory usage. Loaded Objects now: 17266.
+Total: 58.033840 ms (FindLiveObjects: 1.656393 ms CreateObjectMapping: 2.823616 ms MarkObjects: 0.917382 ms  DeleteObjects: 52.282104 ms)
+
+5
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+UnloadTime: 2.750946 ms
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 7300 unused Assets to reduce memory usage. Loaded Objects now: 9939.
+Total: 14.914150 ms (FindLiveObjects: 0.897563 ms CreateObjectMapping: 0.596073 ms MarkObjects: 1.422168 ms  DeleteObjects: 11.221498 ms)
+
+6
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+No More Fleet
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
